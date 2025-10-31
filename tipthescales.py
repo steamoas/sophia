@@ -1,0 +1,10 @@
+from robot import drive, right_attachment
+drive.straight (250)
+drive.turn (90)
+drive.straight (1100)
+drive.turn (-90)
+drive.straight (59)
+right_attachment.run_angle(300,250)
+drive.turn (-90)
+drive.settings (straight_speed=400)
+drive.straight (-850)

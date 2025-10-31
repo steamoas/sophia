@@ -1,0 +1,12 @@
+from robot import drive, left_attachment, right_attachment
+drive.straight(800)
+drive.turn(-90)
+drive.straight(100)
+drive.turn(85)
+drive.straight(-175)
+drive.turn(-38)
+drive.straight(400)
+drive.turn(8.573)
+drive.straight(-75)
+drive.turn(-4)
+drive.straight(-300)
