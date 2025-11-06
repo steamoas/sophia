@@ -1,10 +1,16 @@
+# mission: 10
+# Author: Mason
+# Setuop: Redhome area 1.0 L wheel
+
 from robot import drive, right_attachment
-drive.straight (250)
-drive.turn (90)
-drive.straight (1109)
-right_attachment.run_angle(300,47)
-drive.turn (-90)
-drive.straight (70)
-drive.turn (-90)
-drive.settings (straight_speed=400)
-drive.straight (-850)
+
+async def tipthescales():
+    await drive.straight (250)
+    await drive.turn (90)
+    await drive.straight (1109)
+    await right_attachment.run_angle(300,47)
+    await drive.turn (-90)
+    await drive.straight (70)
+    await drive.turn (-90)
+    drive.settings (straight_speed=400)
+    await drive.straight (-850)

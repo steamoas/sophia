@@ -51,9 +51,13 @@ async def switcher(run_list: Dict, min_run_number: int, max_run_number:int):
                 await wait(15)
     await wait(25)
 
-from i_dunno import i_dunno
+from tipthescales import tipthescales
+from run1 import run1
+from forge import forge
 
 run_list = {}
-run_list.update({1:i_dunno})
+run_list.update({1:run1})
+run_list.update({2:tipthescales})
+run_list.update({3:forge})
 
-run_task(switcher(run_list,1,2))
+run_task(switcher(run_list,1,3))
