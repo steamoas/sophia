@@ -47,6 +47,8 @@ async def switcher(run_list: Dict, min_run_number: int, max_run_number:int):
             drive.settings(*default_drive_settings)
             drive.use_gyro(True)
             await multitask(run_list[current_run_number](),center_button_pressed_task(),race=True)
+            drive.stop()
+
             while Button.CENTER in hub.buttons.pressed():
                 await wait(15)
     await wait(25)
