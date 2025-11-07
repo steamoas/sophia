@@ -57,12 +57,15 @@ async def switcher(run_list: Dict):
 
 from tipthescales import tipthescales
 from run1 import run1
+from minecart import minecart
 from forge import forge
+
 
 run_list = {}
 
 run_list.update({1:run1})
-run_list.update({2:tipthescales})
-run_list.update({3:forge})
+run_list.update({2:minecart})
+run_list.update({3:tipthescales})
+run_list.update({4:forge})
 
 run_task(switcher(run_list))
