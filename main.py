@@ -1,4 +1,3 @@
-
 from pybricks.parameters import Button
 from pybricks.tools import multitask, run_task, wait
 
@@ -15,7 +14,10 @@ async def center_button_pressed_task():
             return
         await wait(75)
 
-async def switcher(run_list: Dict, min_run_number: int, max_run_number:int):
+async def switcher(run_list: Dict):
+    min_run_number = min(run_list.keys())
+    max_run_number = max(run_list.keys())
+
     current_run_number = min_run_number
     default_drive_settings = drive.settings()
     hub.display.number(current_run_number)
@@ -58,8 +60,9 @@ from run1 import run1
 from forge import forge
 
 run_list = {}
+
 run_list.update({1:run1})
 run_list.update({2:tipthescales})
 run_list.update({3:forge})
 
-run_task(switcher(run_list,1,3))
+run_task(switcher(run_list))

@@ -1,7 +1,7 @@
 # mission: 1,2,3
 # Author: Lewis
 
-from pybricks.tools import run_task
+from pybricks.tools import multitask, run_task
 from robot import drive
 from robot import right_attachment, left_attachment
 drive.heading_control.pid(20000, 0, 2500, 3, 7)
@@ -29,9 +29,9 @@ async def run1():
     await drive.turn(90)
     await drive.straight(425)
     await drive.turn(-90)
-    await drive.straight(45)
+    await drive.straight(55)
 
-    await right_attachment.run_angle(200, 90)
+    await multitask(right_attachment.run_angle(500, 90), drive.straight(-10))
 
 
 if __name__ == "__main__":
