@@ -9,7 +9,7 @@ from robot import drive, left_attachment, right_attachment
 async def forge():
     await drive.straight(800)
     await drive.turn(-90)
-    await drive.straight(200)
+    await drive.straight(50)
     await drive.turn(85)
     await drive.straight(-700)
   #  await drive.turn(-34)
