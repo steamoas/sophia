@@ -13,7 +13,7 @@ if __name__ == "__main__":
     # Run with proper PTY allocation
     if os.name == 'nt':  # Windows
         # Use winpty or just run directly (sometimes works)
-        subprocess.run(['pybricksdev', 'run', 'ble', filepath, '--stay-connected'])
+        subprocess.run(['pybricksdev', 'run', 'ble', filepath, '--stay-connected', '--no-start'])
     else:  # Linux/Mac
         # Force allocation of a pseudo-terminal
-        subprocess.run(['pybricksdev', 'run', 'ble', filepath, '--stay-connected'])
+        subprocess.run(['pybricksdev', 'run', 'ble', filepath, '--stay-connected', '--no-start'])
