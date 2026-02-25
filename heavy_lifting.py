@@ -5,8 +5,8 @@ async def heavy_lifting():
 
     await right_attachment.run_angle(150,-175)
     await drive.straight(775)
-    await drive.turn(38)
-    await right_attachment.run_angle(100, 97)
+    await drive.turn(36)
+    await right_attachment.run_angle(100, 102)
     await drive.straight(130)
 
     await right_attachment.run_angle(100, -113)
@@ -29,7 +29,7 @@ async def heavy_lifting():
     await drive.turn(30)
     await drive.straight(250)
     await drive.turn(60)
-    await drive.straight(650)
+    await drive.straight(700)
 
 
 
