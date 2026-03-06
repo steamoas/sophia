@@ -2,6 +2,7 @@ from pybricks.parameters import Button
 from pybricks.tools import multitask, run_task, wait
 
 from robot import hub, drive
+from three_balls import three_balls
 
 hub.system.set_stop_button((Button.LEFT,Button.RIGHT))
 
@@ -71,8 +72,8 @@ run_list.update({2:minecart})
 run_list.update({3:boat})
 run_list.update({4:switch_sides})
 run_list.update({5:heavy_lifting})
-run_list.update({6:tipthescales3})
-run_list.update({7:forge})
-run_list.update({8:mission9})
+run_list.update({6:mission9})
+run_list.update({7:three_balls})
+run_list.update({8:tipthescales3})
 
 run_task(switcher(run_list))

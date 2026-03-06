@@ -11,6 +11,7 @@ async def forge():
     await drive.turn(-90)
     await drive.straight(80)
     await drive.turn(85)
+    drive.settings(straight_speed=900)
     await drive.straight(-700)
   #  await drive.turn(-34)
 #    await drive.straight(400)
