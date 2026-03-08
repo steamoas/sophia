@@ -5,7 +5,7 @@ from robot import drive, right_attachment, left_attachment
 
 async def tipthescales3():
     await drive. straight (260)
-    await right_attachment.run_angle(60,90)
+    await right_attachment.run_angle(300,90)
     await drive. turn (-90)
     await drive. straight (526)
     await drive. turn (100)
