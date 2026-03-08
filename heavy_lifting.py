@@ -2,11 +2,11 @@ from pybricks.tools import run_task
 from robot import drive,right_attachment
 
 async def heavy_lifting():
-
+    drive.settings(straight_speed=350)
     await right_attachment.run_angle(150,-175)
     await drive.straight(775)
     await drive.turn(36)
-    await right_attachment.run_angle(100, 104)
+    await right_attachment.run_angle(100, 100)
     await drive.straight(130)
     await right_attachment.run_angle(100, -113)
     await drive.straight(-100)
@@ -15,8 +15,10 @@ async def heavy_lifting():
     await drive.turn(110)
     await drive.straight(215)
     await right_attachment.run_angle(100, 165)
+    drive.settings(straight_speed=20)
     await drive.straight(-100)
     await right_attachment.run_angle(100, -150)
+    drive.settings(straight_speed=350)
     await drive.straight(-175)
     await drive.turn(-78)
     await drive.straight(265)

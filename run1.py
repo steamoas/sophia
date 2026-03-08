@@ -12,7 +12,7 @@ async def run1():
     drive.use_gyro(True)
     drive.settings(straight_speed=450, straight_acceleration=400)
 
-    await right_attachment.run_angle(200, 45)
+    await right_attachment.run_angle(200, 90)
     await drive.straight(760)
     await drive.turn(-28)
     await drive.straight(45)

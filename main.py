@@ -67,9 +67,9 @@ from boat import boat
 
 run_list = {}
 
-run_list.update({1:run1})
-run_list.update({2:minecart})
-run_list.update({3:boat})
+run_list.update({1:minecart})
+run_list.update({2:boat})
+run_list.update({3:run1})
 run_list.update({4:switch_sides})
 run_list.update({5:heavy_lifting})
 run_list.update({6:mission9})
