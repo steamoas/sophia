@@ -64,7 +64,7 @@ from forge import forge
 from mission9 import mission9
 from heavy_lifting import heavy_lifting
 from boat import boat
-
+from silo import silo
 run_list = {}
 
 run_list.update({1:minecart})
@@ -75,5 +75,6 @@ run_list.update({5:heavy_lifting})
 run_list.update({6:mission9})
 run_list.update({7:three_balls})
 run_list.update({8:tipthescales3})
+run_list.update({9:silo})
 
 run_task(switcher(run_list))
