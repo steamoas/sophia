@@ -23,6 +23,8 @@ async def switcher(run_list: Dict):
     default_drive_settings = drive.settings()
     hub.display.number(current_run_number)
 
+    # Default Drive Settings: 223, 837, 190, 857
+
     while True:
 
         pressed_buttons = hub.buttons.pressed()
