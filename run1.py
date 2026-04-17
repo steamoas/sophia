@@ -22,9 +22,9 @@ async def run1():
     await drive.straight(-140)
     await drive.turn(35)
     drive.settings(straight_speed=1000)
-    await drive.straight(-205)
+    await drive.straight(-220)
     await wait(550)
-    await left_attachment.run_angle(600, 350)
+    await left_attachment.run_angle(600, 375)
     await left_attachment.run_angle(200,-200)
     await drive.straight(-450)
 
