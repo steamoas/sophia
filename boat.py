@@ -13,7 +13,6 @@ async def boat():
     await drive.straight(150)
     await right_attachment.run_angle(200,300)
     await wait(1000)
-    await right_attachment.run_angle(200,-300)
     await drive.straight(-500)
 
 if __name__ == "__main__":
