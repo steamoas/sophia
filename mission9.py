@@ -1,27 +1,26 @@
 # Author(s): Lewis
 
 from pybricks.tools import run_task, wait
-from robot import drive, right_attachment, left_attachment
 
+from robot import drive, right_attachment, left_attachment
 async def mission9():
-    await right_attachment.run_angle(100, -15)
+    await right_attachment.run_until_stalled(-80, duty_limit=20)
 
     await right_attachment.run_angle(100, 80)
 
     await drive.straight(245)
     await drive.turn(-45)
-    await drive.straight(185)
+    await drive.straight(280)
 
-    await right_attachment.run_angle(100, -27)
+    await right_attachment.run_angle(100, -22)
     await drive.straight(35)
-    await right_attachment.run_angle(100, -60)
-
-    
-    await drive.straight(-100)
+    await right_attachment.run_angle(100, -88)
     await wait(500)
 
+    await drive.straight(-75)
+    await wait(500)
     await drive.straight(50)
-    await right_attachment.run_angle(100, 80)
+    await right_attachment.run_angle(100, 60)
     await drive.straight(-100)
 
     await drive.turn(15)

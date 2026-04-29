@@ -4,7 +4,7 @@ from pybricks.pupdevices import Motor
 from pybricks.parameters import Button, Port, Direction
 
 hub = PrimeHub()
-
+print(hub.battery.voltage())
 right_attachment = Motor(Port.B, Direction.COUNTERCLOCKWISE)
 left_attachment = Motor(Port.F, Direction.CLOCKWISE)
 

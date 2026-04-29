@@ -67,16 +67,17 @@ from mission9 import mission9
 from heavy_lifting import heavy_lifting
 from boat import boat
 from silo import silo
+from silo_mill import silo_mill
 run_list = {}
 
-run_list.update({1:minecart})
+run_list.update({1:run1})
 run_list.update({2:boat})
-run_list.update({3:run1})
-run_list.update({4:switch_sides})
-run_list.update({5:heavy_lifting})
-run_list.update({6:mission9})
-run_list.update({7:three_balls})
+run_list.update({3:minecart})
+run_list.update({4:mission9})
+run_list.update({5:silo_mill})
+run_list.update({6:three_balls})
+run_list.update({7:tipthescales3})
 run_list.update({8:tipthescales3})
-run_list.update({9:silo})
+run_list.update({9:silo_mill})
 
 run_task(switcher(run_list))
