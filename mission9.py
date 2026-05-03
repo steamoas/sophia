@@ -12,15 +12,15 @@ async def mission9():
     await drive.turn(-45)
     await drive.straight(280)
 
-    await right_attachment.run_angle(100, -22)
-    await drive.straight(35)
-    await right_attachment.run_angle(100, -88)
+    await right_attachment.run_angle(100, -29)
+    await drive.straight(20)
+    await right_attachment.run_angle(100, -110)
     await wait(500)
 
-    await drive.straight(-75)
+    await drive.straight(-90)
     await wait(500)
-    await drive.straight(50)
-    await right_attachment.run_angle(100, 60)
+    await drive.straight(28)
+    await right_attachment.run_angle(100, 62)
     await drive.straight(-100)
 
     await drive.turn(15)
